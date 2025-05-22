@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instant Graphics - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff0000;
+      --bg: #0f0f0f;
+      --text: #ffffff;
+      --card-bg: #000000;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    .portfolio-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .portfolio-container h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .portfolio-container p.description {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      color: #ddd;
+    }
+    
+  </style>
+</head>
+<body>
+
+<div class="portfolio-container">
+  <h2>Portfolio</h2>
+  <p class="description">
+    Alcuni dei progetti visivi realizzati da Instant Graphics: loghi, identità di marca, grafiche social, animazioni e molto altro.
+  </p>
+
+  <div class="portfolio-grid">
+    <div class="project-card">
+      <div class="project-title">Logo per NovaTech</div>
+      <div class="project-desc">Design minimal per un brand tecnologico innovativo.</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Campagna Instagram</div>
+      <div class="project-desc">Grafica e storytelling visivo per un evento online.</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">App Fitness UI</div>
+      <div class="project-desc">Interfaccia moderna per una app dedicata al benessere.</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Animazione per Spot</div>
+      <div class="project-desc">Motion graphics dinamica per video promozionale.</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Packaging Caffè Zero</div>
+      <div class="project-desc">Design eco-friendly per una linea di prodotti bio.</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Brand Identity Exa</div>
+      <div class="project-desc">Rebranding completo per una startup creativa.</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

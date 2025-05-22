@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instant Graphics - Servizi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff0000;
+      --bg: #0f0f0f;
+      --text: #ffffff;
+      --card-bg: #1a1a1a;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    .services-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .services-container h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .services-container p.description {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: var(--card-bg);
+      padding: 30px 20px;
+      border-radius: 16px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0, 255, 198, 0.05);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(255, 153, 0, 0.2);
+    }
+
+    .service-icon {
+      font-size: 40px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: var(--primary);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+<div class="services-container">
+  <h2>I nostri Servizi</h2>
+  <p class="description">
+    Instant Graphics offre soluzioni visive su misura, pensate per dare potenza visiva al tuo brand. Creatività, precisione e impatto in ogni progetto.
+  </p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🎨</div>
+      <h3>Logo Design</h3>
+      <p>Creiamo loghi iconici e versatili, progettati per distinguere il tuo brand ovunque.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📦</div>
+      <h3>Branding Completo</h3>
+      <p>Dall’identità visiva ai materiali promozionali: il tuo brand, curato in ogni dettaglio.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <h3>Social Media Kit</h3>
+      <p>Template, cover, storie animate e contenuti per Instagram, TikTok e oltre.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎬</div>
+      <h3>Motion Graphics</h3>
+      <p>Animazioni fluide e coinvolgenti per raccontare la tua storia con stile.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💻</div>
+      <h3>UI/UX Design</h3>
+      <p>Progettiamo interfacce web e mobile intuitive, moderne e user-centered.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🖨️</div>
+      <h3>Stampa Creativa</h3>
+      <p>Biglietti, flyer, packaging: il design che si tocca con mano.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

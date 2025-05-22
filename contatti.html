@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instant Graphics - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff0000;
+      --bg: #0f0f0f;
+      --text: #ffffff;
+      --card-bg: #1a1a1a;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    p.description {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      background-color: var(--primary);
+      color: var(--bg);
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="section-container">
+  <h2>Contattaci</h2>
+  <p class="description">
+    Hai un progetto in mente? Vuoi collaborare con noi? Compila il modulo qui sotto e ti risponderemo al più presto!
+  </p>
+  <form class="contact-form">
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="La tua email" required>
+
+    <label for="message">Messaggio</label>
+    <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio..." required></textarea>
+
+    <button type="submit">Invia Messaggio</button>
+  </form>
+</div>
+
+</body>
+</html>
